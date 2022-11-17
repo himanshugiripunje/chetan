@@ -8,5 +8,5 @@ is an open-source system for automating deployment, scaling, and management of c
   
 1.  **why kubernetes used?**
 
-*****ans***** - version updates without downtime.
+**ans**- version updates without downtime.
    
