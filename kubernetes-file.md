@@ -7,5 +7,6 @@ is an open-source system for automating deployment, scaling, and management of c
     Self-healing- Restarts containers that fail, replaces and reschedules containers when nodes die, 
   
 1.  **why kubernetes used?**
- **ans** - version updates without downtime.
+
+**ans** - version updates without downtime.
    
