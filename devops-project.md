@@ -25,13 +25,64 @@ and also stores our secrets in secret manager
 
 we provided additional security to application where we applied various rules to protect from web explits
 
-# in that project 1stly we create cicd pipeline 
+## in that project 1stly we create cicd pipeline 
 
-we add various stages 
+we use ci/cd pipeline for deployment, 1stly we take docker image from ecr and run that container and install npm tool, build the code of website, our dependency of code is store in package.json .the we create microfrontend by terraform, with the help of terraform we create infrastructure for frontend also
+with that we host static webservices attach to cloudfront. 
+we stored our state file remotely, 
+then we take docker image from ecr, run on eks cluster, where
 
-in that we add multiple steps like pull code from github , build code from maven, test code from sonarcube, push build to the s3 storage
+we use namespace to differniate project from others, also using node-port to access this service externally,  
+this application is using java framework that's why it do not have plaform dependency.
 
-now, accd to branching stratergy 
+the data delivery by using json language it is most secure, it act  as a interpreter between user and application.
+
+this application is connected to database internally.
+
+**now, accd to gitflow branching stratergy:**
+code is 1st placed on development branch, is where we merges all our feature and release branch before merging with master branch.
+
+after code is ready it passes throught release branch.
+
+it allow to focus on release the code to master branch.
+
+if master branch having any bugs in it then, that part of code is again put into hotfix branch.
+
+then after code bug fixes in the **hotfix** branch it releases to master branch.
+
+and in master branch our prod-ready-code will deploy on the prod servers.
+
+in our frontend we use angular and backend we use java based **framework**.
+
+# In this project my roles and responsibilities are:-
+
+in the project my roles and responsibilities 
+
+like, managing cicd pipeline 
+
+perform the root cause analysis of production errors
+
+responsible for application failure, downtime
+
+integrate frontend with backend
+
+ensure application should be highly accessible from anywhere 
+
+creating and managing replication of application database
+
+maintaining low as latency<10mili sec by dynamodb database
+
+ensuring application should be fault taulerant and highly reliable by monitoring logs on cloudwatch
+
+making sure that it do not face issue during version upgradation.
+
+make sure the application is safe from web attacks, like ddos attack
+
+make sure that backend credential have not being public.
+
+
+
+
 
 
 
