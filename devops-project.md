@@ -23,7 +23,7 @@ we use alb to distribute the traffic accross servers
 
 and also stores our secrets in secret manager
 
-we provided additional security to application where we applied various rules to protect from web explits
+we provided additional security to application where we applied various rules to protect from web explits <<<WAF
 
 ## in that project 1stly we create cicd pipeline 
 
